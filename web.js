@@ -9,7 +9,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send(message.toString("utf-8", 0, 30))
+  response.send(message.toString("utf-8", 0, 999999999))
 });
 
 var port = process.env.PORT || 5000;
